@@ -1,0 +1,32 @@
+{
+  "@context" : {
+    "possibilisticDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree"
+    },
+    "fuzzyDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree"
+    },
+    "semanticRelationDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree"
+    },
+    "possibilityDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree"
+    },
+    "confidenceDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree"
+    },
+    "necessityDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree"
+    },
+    "qualitativeConfidenceDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "probabilisticDegree" : {
+      "@id" : "http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree"
+    },
+    "LexicoSemanticRelation" : {
+      "@id" : "varclass:LexicoSemanticRelation"
+    }
+  }
+}

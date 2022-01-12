@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sid.cps.unizar.es/def/fuzzyLemon#"
+     xml:base="http://sid.cps.unizar.es/def/fuzzyLemon"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="varclass:LexicoSemanticRelation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree">
+        <rdfs:subPropertyOf rdf:resource="http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree">
+        <rdfs:domain rdf:resource="varclass:LexicoSemanticRelation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- varclass:LexicoSemanticRelation -->
+
+
+    <owl:Class rdf:about="varclass:LexicoSemanticRelation"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

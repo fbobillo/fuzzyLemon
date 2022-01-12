@@ -1,0 +1,108 @@
+<http://sid.cps.unizar.es/def/fuzzyLemon#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid7 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid3 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid3 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree> <http://www.w3.org/2000/01/rdf-schema#domain> <varclass:LexicoSemanticRelation> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#fuzzyDegree> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid10 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid16 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid12 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#necessityDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#possibilisticDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#possibilityDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#confidenceDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#probabilisticDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#qualitativeConfidenceDegree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree
+<http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sid.cps.unizar.es/def/fuzzyLemon#semanticRelationDegree> <http://www.w3.org/2000/01/rdf-schema#domain> <varclass:LexicoSemanticRelation> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# varclass:LexicoSemanticRelation
+<varclass:LexicoSemanticRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
